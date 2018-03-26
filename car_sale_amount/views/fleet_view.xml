@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='2inherit_fleet_vehicle_view_form' model='ir.ui.view'>
+        <field name="name">inherit.fleet.vehicle.form</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <field name='car_value' position="after">
+                <label for="type_sale_price" string="Sale price"/>
+                <div class="o_address_format" >
+                    <field name="type_sale_price" class="o_address_street"/>
+                    <field name="amount_price" class="o_address_street"/>
+                </div>
+            </field>
+        </field>
+    </record>
+</odoo>

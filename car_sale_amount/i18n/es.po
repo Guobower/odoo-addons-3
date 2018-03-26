@@ -1,0 +1,80 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* car_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 19:41+0000\n"
+"PO-Revision-Date: 2018-03-25 19:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_sale
+#: model:ir.model.fields,field_description:car_sale.field_fleet_vehicle_amount_price
+msgid "Amount price"
+msgstr "Valor"
+
+#. module: car_sale
+#: code:addons/car_sale/models/fleet.py:14
+#: selection:fleet.vehicle,type_sale_price:0
+#, python-format
+msgid "Benefit amount"
+msgstr "Valor de beneficio"
+
+#. module: car_sale
+#: model:ir.model,name:car_sale.model_fleet_vehicle_cost
+msgid "Cost related to a vehicle"
+msgstr "Coste relativo al vehículo"
+
+#. module: car_sale
+#: code:addons/car_sale/models/fleet.py:13
+#: selection:fleet.vehicle,type_sale_price:0
+#, python-format
+msgid "Fix price"
+msgstr "Precio fijo"
+
+#. module: car_sale
+#: model:ir.model,name:car_sale.model_fleet_vehicle
+msgid "Information on a vehicle"
+msgstr "Información en un vehículo"
+
+#. module: car_sale
+#: model:ir.model.fields,field_description:car_sale.field_fleet_vehicle_type_sale_price
+msgid "Benefit Type"
+msgstr "Tipo de beneficio"
+
+#. module: car_sale
+#: code:addons/car_sale/models/fleet.py:12
+#: selection:fleet.vehicle,type_sale_price:0
+#, python-format
+msgid "Percent"
+msgstr "Porcentaje"
+
+#. module: car_sale
+#: model:ir.model,name:car_sale.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: car_sale
+#: model:ir.ui.view,arch_db:car_sale.2inherit_fleet_vehicle_view_form
+msgid "Sale price"
+msgstr "Precio de venta"
+
+
+#. module: car_sale
+#: code:addons/car_sale/models/fleet.py:17
+#, python-format
+msgid "Method for calculating the sale price of the vehicle:\n"
+"                                                  *Percentage: A profit percentage is added to the cost of the vehicle.\n"
+"                                                  *Fixed Price: Manually set price.\n"
+"                                                  *Benefit value: Value added to cost."
+msgstr "Método para calcular el precio de venta del vehículo:\n"
+"                                                  *Porcentaje: Se añade un porcentaje de beneficio al coste del vehículo.\n"
+"                                                  *Precio Fijo: Precio establecido manualmente.\n"
+"                                                  *Valor de beneficio: Valor sumado al coste."
