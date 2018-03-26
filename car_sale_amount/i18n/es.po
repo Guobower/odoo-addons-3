@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* car_sale
+#	* car_sale_amount
 #
 msgid ""
 msgstr ""
@@ -15,60 +15,60 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: car_sale
-#: model:ir.model.fields,field_description:car_sale.field_fleet_vehicle_amount_price
+#. module: car_sale_amount
+#: model:ir.model.fields,field_description:car_sale_amount.field_fleet_vehicle_amount_price
 msgid "Amount price"
 msgstr "Valor"
 
-#. module: car_sale
-#: code:addons/car_sale/models/fleet.py:14
+#. module: car_sale_amount
+#: code:addons/car_sale_amount/models/fleet.py:14
 #: selection:fleet.vehicle,type_sale_price:0
 #, python-format
 msgid "Benefit amount"
 msgstr "Valor de beneficio"
 
-#. module: car_sale
-#: model:ir.model,name:car_sale.model_fleet_vehicle_cost
+#. module: car_sale_amount
+#: model:ir.model,name:car_sale_amount.model_fleet_vehicle_cost
 msgid "Cost related to a vehicle"
 msgstr "Coste relativo al vehículo"
 
-#. module: car_sale
-#: code:addons/car_sale/models/fleet.py:13
+#. module: car_sale_amount
+#: code:addons/car_sale_amount/models/fleet.py:13
 #: selection:fleet.vehicle,type_sale_price:0
 #, python-format
 msgid "Fix price"
 msgstr "Precio fijo"
 
-#. module: car_sale
-#: model:ir.model,name:car_sale.model_fleet_vehicle
+#. module: car_sale_amount
+#: model:ir.model,name:car_sale_amount.model_fleet_vehicle
 msgid "Information on a vehicle"
 msgstr "Información en un vehículo"
 
-#. module: car_sale
-#: model:ir.model.fields,field_description:car_sale.field_fleet_vehicle_type_sale_price
+#. module: car_sale_amount
+#: model:ir.model.fields,field_description:car_sale_amount.field_fleet_vehicle_type_sale_price
 msgid "Benefit Type"
 msgstr "Tipo de beneficio"
 
-#. module: car_sale
-#: code:addons/car_sale/models/fleet.py:12
+#. module: car_sale_amount
+#: code:addons/car_sale_amount/models/fleet.py:12
 #: selection:fleet.vehicle,type_sale_price:0
 #, python-format
 msgid "Percent"
 msgstr "Porcentaje"
 
-#. module: car_sale
-#: model:ir.model,name:car_sale.model_product_template
+#. module: car_sale_amount
+#: model:ir.model,name:car_sale_amount.model_product_template
 msgid "Product Template"
 msgstr "Plantilla de producto"
 
-#. module: car_sale
-#: model:ir.ui.view,arch_db:car_sale.2inherit_fleet_vehicle_view_form
+#. module: car_sale_amount
+#: model:ir.ui.view,arch_db:car_sale_amount.2inherit_fleet_vehicle_view_form
 msgid "Sale price"
 msgstr "Precio de venta"
 
 
-#. module: car_sale
-#: code:addons/car_sale/models/fleet.py:17
+#. module: car_sale_amount
+#: code:addons/car_sale_amount/models/fleet.py:17
 #, python-format
 msgid "Method for calculating the sale price of the vehicle:\n"
 "                                                  *Percentage: A profit percentage is added to the cost of the vehicle.\n"
