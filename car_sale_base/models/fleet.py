@@ -15,12 +15,14 @@ class FleetVehicle(models.Model):
     @api.model
     def create(self, data):
         vehicle = super(FleetVehicle, self.with_context(mail_create_nolog=True)).create(data)
+        print vehicle.id
         product = self.env['product.template'].create({'name': vehicle.model_id.brand_id.name + ' ' + vehicle.model_id.name,
                                                        'default_code': vehicle.license_plate,
                                                        'standard_price': vehicle.car_value,
                                                        'type': 'consu',
                                                        'is_vehicle': True})
         vehicle.product_id = product.id
+        product.write({'vehicle_id': vehicle.id})
         return vehicle
 
     @api.multi

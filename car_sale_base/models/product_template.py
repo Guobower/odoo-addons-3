@@ -9,3 +9,4 @@ class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     is_vehicle = fields.Boolean('Is a Vehicle', default=False)
+    vehicle_id = fields.Many2one('fleet.vehicle', readonly=True, string="Vehicle")
