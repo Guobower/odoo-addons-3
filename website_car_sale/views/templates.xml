@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template inherit_id='website_sale.product' id="product_add_to_cart_hidden" customize_show="True" name="Hidden add to cart">
+        <xpath expr='//a[@id="add_to_cart"]' position='replace'/>
+        <xpath expr="//t/div/section/div/div/p[@class='text-muted']" position="replace"/>
+        <xpath expr="//div[@id='product_details']//div/p[@class='text-muted']" position="before">
+            <div class="mt16" style="text-align:center">
+                <div class="col-xs-12 mb8">
+                    <strong>Características</strong>
+                </div>
+                <div class="col-xs-6">
+                    <ul>
+                        <li>
+                            <span>Marca</span>
+                            <!--<span t-field="product.vehicle_id."-->
+                        </li>
+                        <li>Modelo</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul>
+                        <li>Marca</li>
+                        <li>Modelo</li>
+                    </ul>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -11,8 +11,8 @@
     'summary': "Car sales website",
     "depends": ["fleet",
                 "product",
-                "webstite",
+                "website_sale",
                 "car_sale_amount"],
-    "data": [],
+    "data": ['views/templates.xml'],
     'installable': True,
 }
