@@ -10,14 +10,16 @@ class FleetVehicle(models.Model):
 
     product_id = fields.Many2one('product.template', 'Product',
                                  help='Product configure', ondelete='cascade',
-                                 readonly = True)
+                                 readonly=True)
+    year = fields.Integer(string="Matriculation year")
+    waranty = fields.Char(string="Waranty")
+    extras = fields.Html(string="Extras")
 
     @api.model
     def create(self, data):
         vehicle = super(FleetVehicle, self.with_context(mail_create_nolog=True)).create(data)
         print vehicle.id
         product = self.env['product.template'].create({'name': vehicle.model_id.brand_id.name + ' ' + vehicle.model_id.name,
-                                                       'default_code': vehicle.license_plate,
                                                        'standard_price': vehicle.car_value,
                                                        'type': 'consu',
                                                        'is_vehicle': True})
