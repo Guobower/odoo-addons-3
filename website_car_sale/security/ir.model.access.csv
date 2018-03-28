@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fleet_vehicle_public,fleet.vehicle.public,fleet.model_fleet_vehicle,,1,0,0,0
+access_fleet_vehicle_model_public,fleet.vehicle.model.public,fleet.model_fleet_vehicle_model,,1,0,0,0
+access_fleet_vehicle_model_brand_public,fleet.vehicle.model.brand.public,fleet.model_fleet_vehicle_model_brand,,1,0,0,0
+access_fleet_vehicle_odometer_public,fleet.vehicle.odometer.public,fleet.model_fleet_vehicle_odometer,,1,0,0,0

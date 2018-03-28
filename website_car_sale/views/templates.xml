@@ -8,21 +8,63 @@
                 <div class="col-xs-12 mb8">
                     <strong>Características</strong>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-6" style="text-align:left">
                     <ul>
                         <li>
-                            <span>Marca</span>
-                            <!--<span t-field="product.vehicle_id."-->
+                            <strong>Marca:</strong>
+                            <span t-field="product.vehicle_id.model_id.brand_id"/>
                         </li>
-                        <li>Modelo</li>
+                        <li>
+                            <strong>Modelo:</strong>
+                            <span t-field="product.vehicle_id.model_id"/>
+                        </li>
+                        <li>
+                            <strong>Año:</strong>
+                            <!--<span t-field="product.vehicle_id"/>-->
+                        </li>
+                        <li>
+                            <strong>Cambio:</strong>
+                            <span t-field="product.vehicle_id.transmission"/>
+                        </li>
+                        <li>
+                            <strong>Puertas:</strong>
+                            <span t-field="product.vehicle_id.doors"/>
+                        </li>
+                        <li>
+                            <strong>Plazas:</strong>
+                            <span t-field="product.vehicle_id.seats"/>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-6" style="text-align:left">
                     <ul>
-                        <li>Marca</li>
-                        <li>Modelo</li>
+                        <li>
+                            <strong>Color:</strong>
+                            <span t-field="product.vehicle_id.color"/>
+                        </li>
+                        <li>
+                            <strong>Combustible:</strong>
+                            <span t-field="product.vehicle_id.fuel_type"/>
+                        </li>
+                        <li>
+                            <strong>Potencia:</strong>
+                            <span t-field="product.vehicle_id.horsepower"/>
+                        </li>
+                        <li>
+                            <strong>Kilómetros:</strong>
+                            <span t-field="product.vehicle_id.odometer"/>
+                        </li>
+                        <li>
+                            <strong>Emisiones CO2:</strong>
+                            <span t-field="product.vehicle_id.co2"/>
+                        </li>
+                        <li>
+                            <strong>Garantía:</strong>
+                            <!--<span t-field="product.vehicle_id"/>-->
+                        </li>
                     </ul>
                 </div>
+
             </div>
         </xpath>
     </template>

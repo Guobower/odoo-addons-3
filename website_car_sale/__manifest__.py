@@ -13,6 +13,8 @@
                 "product",
                 "website_sale",
                 "car_sale_amount"],
-    "data": ['views/templates.xml'],
+    "data": ['security/ir.model.access.csv',
+             'security/website_fleet.xml',
+             'views/templates.xml'],
     'installable': True,
 }
