@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template inherit_id='website_sale.product' id="product_add_to_cart_hidden" customize_show="True" name="Hidden add to cart">
-        <xpath expr='//a[@id="add_to_cart"]' position='replace'/>
-        <xpath expr="//t/div/section/div/div/p[@class='text-muted']" position="replace"/>
+        <xpath expr='//a[@id="add_to_cart"]' position='attributes'>
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//t/div/section/div/div/p[@class='text-muted']" position='attributes'>
+            <attribute name="t-att-style">'display: none;' if product.is_vehicle else ''</attribute>
+        </xpath>
         <xpath expr="//div[@id='product_details']//div/p[@class='text-muted']" position="before">
-            <div class="mt16" style="text-align:center">
+            <div t-if="product.is_vehicle" class="mt16" style="text-align:center">
                 <div class="col-xs-12 mb8">
                     <strong>General characteristics</strong>
                 </div>
@@ -68,7 +72,7 @@
             </div>
         </xpath>
         <xpath expr='//div[@itemprop="description"]' position="after">
-            <div t-if="product.vehicle_id.extras" class="row col-xs-12" style="padding:0 10%">
+            <div t-if="product.is_vehicle and product.vehicle_id.extras" class="row col-xs-12" style="padding:0 10%">
                 <h5 style="text-align:center;font-weight: bold;">Extra characteristics</h5>
                 <span t-field="product.vehicle_id.extras"/>
             </div>
