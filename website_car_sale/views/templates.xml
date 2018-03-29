@@ -6,65 +6,71 @@
         <xpath expr="//div[@id='product_details']//div/p[@class='text-muted']" position="before">
             <div class="mt16" style="text-align:center">
                 <div class="col-xs-12 mb8">
-                    <strong>Características</strong>
+                    <strong>General characteristics</strong>
                 </div>
                 <div class="col-xs-6" style="text-align:left">
                     <ul>
                         <li>
-                            <strong>Marca:</strong>
+                            <strong>Brand:</strong>
                             <span t-field="product.vehicle_id.model_id.brand_id"/>
                         </li>
                         <li>
-                            <strong>Modelo:</strong>
+                            <strong>Model:</strong>
                             <span t-field="product.vehicle_id.model_id"/>
                         </li>
-                        <li>
-                            <strong>Año:</strong>
-                            <!--<span t-field="product.vehicle_id"/>-->
+                        <li t-if="product.vehicle_id.year">
+                            <strong>Year:</strong>
+                            <span t-field="product.vehicle_id.year"/>
                         </li>
-                        <li>
-                            <strong>Cambio:</strong>
+                        <li t-if="product.vehicle_id.transmission">
+                            <strong>Transmission:</strong>
                             <span t-field="product.vehicle_id.transmission"/>
                         </li>
-                        <li>
-                            <strong>Puertas:</strong>
+                        <li t-if="product.vehicle_id">
+                            <strong>Doors:</strong>
                             <span t-field="product.vehicle_id.doors"/>
                         </li>
-                        <li>
-                            <strong>Plazas:</strong>
+                        <li t-if="product.vehicle_id.seats">
+                            <strong>Seats:</strong>
                             <span t-field="product.vehicle_id.seats"/>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xs-6" style="text-align:left">
                     <ul>
-                        <li>
+                        <li t-if="product.vehicle_id.color">
                             <strong>Color:</strong>
                             <span t-field="product.vehicle_id.color"/>
                         </li>
-                        <li>
-                            <strong>Combustible:</strong>
+                        <li t-if="product.vehicle_id.fuel_type">
+                            <strong>Fuel:</strong>
                             <span t-field="product.vehicle_id.fuel_type"/>
                         </li>
-                        <li>
-                            <strong>Potencia:</strong>
+                        <li t-if="product.vehicle_id.horsepower">
+                            <strong>Power:</strong>
                             <span t-field="product.vehicle_id.horsepower"/>
                         </li>
-                        <li>
-                            <strong>Kilómetros:</strong>
+                        <li t-if="product.vehicle_id.odometer">
+                            <strong>Kilometers:</strong>
                             <span t-field="product.vehicle_id.odometer"/>
                         </li>
-                        <li>
-                            <strong>Emisiones CO2:</strong>
+                        <li t-if="product.vehicle_id.co2">
+                            <strong>CO2 emitions:</strong>
                             <span t-field="product.vehicle_id.co2"/>
                         </li>
-                        <li>
-                            <strong>Garantía:</strong>
-                            <!--<span t-field="product.vehicle_id"/>-->
+                        <li t-if="product.vehicle_id.waranty">
+                            <strong>Waranty:</strong>
+                            <span t-field="product.vehicle_id.waranty"/>
                         </li>
                     </ul>
                 </div>
 
+            </div>
+        </xpath>
+        <xpath expr='//div[@itemprop="description"]' position="after">
+            <div t-if="product.vehicle_id.extras" class="row col-xs-12" style="padding:0 10%">
+                <h5 style="text-align:center;font-weight: bold;">Extra characteristics</h5>
+                <span t-field="product.vehicle_id.extras"/>
             </div>
         </xpath>
     </template>

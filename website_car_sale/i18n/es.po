@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_car_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-29 00:41+0000\n"
+"PO-Revision-Date: 2018-03-29 00:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Brand:</strong>"
+msgstr "<strong>Marca:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>CO2 emitions:</strong>"
+msgstr "<strong>Emisiones (CO2):</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Color:</strong>"
+msgstr "<strong>Color:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Doors:</strong>"
+msgstr "<strong>Puertas:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Fuel:</strong>"
+msgstr "<strong>Combustible:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>General characteristics</strong>"
+msgstr "<strong>Características generales</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Kilometers:</strong>"
+msgstr "<strong>Kilómetros:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Model:</strong>"
+msgstr "<strong>Modelo:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Power:</strong>"
+msgstr "<strong>Potencia:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Seats:</strong>"
+msgstr "<strong>Plazas:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Transmission:</strong>"
+msgstr "<strong>Cambios:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Waranty:</strong>"
+msgstr "<strong>Garantía:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "<strong>Year:</strong>"
+msgstr "<strong>Año:</strong>"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "Extra characteristics"
+msgstr "Características extra"
