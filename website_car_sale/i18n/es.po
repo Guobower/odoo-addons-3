@@ -72,7 +72,7 @@ msgstr "<strong>Cambios:</strong>"
 
 #. module: website_car_sale
 #: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
-msgid "<strong>Waranty:</strong>"
+msgid "<strong>Warranty:</strong>"
 msgstr "<strong>Garantía:</strong>"
 
 #. module: website_car_sale

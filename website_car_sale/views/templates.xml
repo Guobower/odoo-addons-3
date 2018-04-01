@@ -63,8 +63,8 @@
                             <span t-field="product.vehicle_id.co2"/>
                         </li>
                         <li t-if="product.vehicle_id.waranty">
-                            <strong>Waranty:</strong>
-                            <span t-field="product.vehicle_id.waranty"/>
+                            <strong>Warranty:</strong>
+                            <span t-field="product.vehicle_id.warranty"/>
                         </li>
                     </ul>
                 </div>
