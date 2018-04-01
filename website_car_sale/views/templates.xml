@@ -62,7 +62,7 @@
                             <strong>CO2 emitions:</strong>
                             <span t-field="product.vehicle_id.co2"/>
                         </li>
-                        <li t-if="product.vehicle_id.waranty">
+                        <li t-if="product.vehicle_id.warranty">
                             <strong>Warranty:</strong>
                             <span t-field="product.vehicle_id.warranty"/>
                         </li>
