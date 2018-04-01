@@ -49,8 +49,11 @@ class FleetVehicleCost(models.Model):
 
     @api.model
     def create(self, data):
-        vehicle = self.env['fleet.vehicle'].browse(data['vehicle_id'])
-        vehicle.car_value = vehicle.car_value + (data['amount'] or 0.0)
+        vehicle = False
+        if 'vehicle_id' in data.keys():
+            vehicle = self.env['fleet.vehicle'].browse(data['vehicle_id'])
+        if vehicle and 'amount' in data.keys():
+            vehicle.car_value = vehicle.car_value + (data['amount'] or 0.0)
         return super(FleetVehicleCost, self).create(data)
 
     @api.multi
@@ -67,5 +70,4 @@ class FleetVehicleCost(models.Model):
                 record.vehicle_id.car_value = record.vehicle_id.car_value - record.amount
                 vehicle = self.env['fleet.vehicle'].browse(vehicle_id)
                 vehicle.car_value = vehicle.car_value + amount
-
         return super(FleetVehicleCost, self).write(vals)
