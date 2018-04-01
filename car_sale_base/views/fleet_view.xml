@@ -9,7 +9,7 @@
                 <field name="product_id" string="Product"/>
             </field>
             <field name="color" position="after">
-                <field name="waranty"/>
+                <field name="warranty"/>
             </field>
             <field name="acquisition_date" position="before">
                 <field name="year"/>
@@ -17,6 +17,9 @@
             <sheet position="inside">
                 <group string="Extras">
                     <field name="extras" nolabel="1" widget="html"/>
+                </group>
+                <group string="Internal notes">
+                    <field name="internal_notes" nolabel="1" widget="html"/>
                 </group>
             </sheet>
         </field>

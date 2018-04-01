@@ -54,8 +54,8 @@ msgid "Vehicle"
 msgstr "Vehículo"
 
 #. module: car_sale_base
-#: model:ir.model.fields,field_description:car_sale_base.field_fleet_vehicle_waranty
-msgid "Waranty"
+#: model:ir.model.fields,field_description:car_sale_base.field_fleet_vehicle_warranty
+msgid "Warranty"
 msgstr "Garantía"
 
 #. module: fleet
@@ -67,3 +67,22 @@ msgstr "Nº de plazas del vehículo"
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_seats
 msgid "Seats Number"
 msgstr "Nº de plazas"
+
+#. module: car_sale_base
+#: model:ir.ui.view,arch_db:car_sale_base.inherit_fleet_vehicle_view_form
+msgid "Internal notes"
+msgstr "Notas internas"
+
+#. module: car_sale_base
+#: code:addons/car_sale_base/models/fleet.py:15
+#: model:ir.model.fields,help:car_sale_base.field_fleet_vehicle_extras
+#, python-format
+msgid "Extras to be published on the website."
+msgstr "Extras que serán publicados en el sitio web."
+
+#. module: car_sale_base
+#: code:addons/car_sale_base/models/fleet.py:16
+#: model:ir.model.fields,help:car_sale_base.field_fleet_vehicle_internal_notes
+#, python-format
+msgid "Notes and internal clarifications will not be published."
+msgstr "Notas internas y aclaraciones, no se publicarán en el sitio web."

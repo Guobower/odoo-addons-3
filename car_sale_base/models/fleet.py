@@ -4,7 +4,6 @@
 from odoo import api, fields, models, tools, _
 from odoo.exceptions import UserError
 
-
 class FleetVehicle(models.Model):
     _inherit = 'fleet.vehicle'
 
@@ -12,8 +11,10 @@ class FleetVehicle(models.Model):
                                  help='Product configure', ondelete='cascade',
                                  readonly=True)
     year = fields.Integer(string="Matriculation year")
-    waranty = fields.Char(string="Waranty")
-    extras = fields.Html(string="Extras")
+    warranty = fields.Char(string="Warranty")
+    extras = fields.Html(string="Extras", help=_("Extras to be published on the website."))
+    internal_notes = fields.Html(string="Notes", help=_("Notes and internal clarifications "
+                                                        "will not be published."))
 
     @api.model
     def create(self, data):
