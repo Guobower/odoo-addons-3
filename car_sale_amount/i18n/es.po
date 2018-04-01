@@ -78,3 +78,10 @@ msgstr "Método para calcular el precio de venta del vehículo:\n"
 "                                                  *Porcentaje: Se añade un porcentaje de beneficio al coste del vehículo.\n"
 "                                                  *Precio Fijo: Precio establecido manualmente.\n"
 "                                                  *Valor de beneficio: Valor sumado al coste."
+
+
+#. module: car_sale_amount
+#: code:addons/car_sale_amount/models/fleet.py:11
+#, python-format
+msgid "Cumulative vehicle value by expenses and purchases"
+msgstr "Valor acumulativo del vehículo según gastos y compras"

@@ -8,7 +8,7 @@ from odoo.exceptions import UserError
 class FleetVehicle(models.Model):
     _inherit = 'fleet.vehicle'
 
-    car_value = fields.Float (readonly = True)
+    car_value = fields.Float (readonly = True, help=_("Cumulative vehicle value by expenses and purchases"))
     type_sale_price = fields.Selection([('percent', _('Percent')),
                                         ('fix_price', _('Fix price')),
                                         ('benefit_amount', _('Benefit amount'))],
