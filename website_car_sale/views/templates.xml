@@ -52,7 +52,7 @@
                         </li>
                         <li t-if="product.vehicle_id.horsepower">
                             <strong>Power:</strong>
-                            <span t-field="product.vehicle_id.horsepower"/>
+                            <span t-field="product.vehicle_id.horsepower">CV</span>
                         </li>
                         <li t-if="product.vehicle_id.odometer">
                             <strong>Kilometers:</strong>
