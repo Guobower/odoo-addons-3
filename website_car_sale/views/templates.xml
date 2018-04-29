@@ -16,11 +16,11 @@
                     <ul>
                         <li>
                             <strong>Brand:</strong>
-                            <span t-field="product.vehicle_id.model_id.brand_id"/>
+                            <span t-field="product.vehicle_id.model_id.brand_id.name"/>
                         </li>
                         <li>
                             <strong>Model:</strong>
-                            <span t-field="product.vehicle_id.model_id"/>
+                            <span t-field="product.vehicle_id.model_id.name"/>
                         </li>
                         <li t-if="product.vehicle_id.year">
                             <strong>Year:</strong>
