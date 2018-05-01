@@ -82,5 +82,10 @@ msgstr "<strong>Año:</strong>"
 
 #. module: website_car_sale
 #: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
+msgid "CV"
+msgstr "CV"
+
+#. module: website_car_sale
+#: model:ir.ui.view,arch_db:website_car_sale.product_add_to_cart_hidden
 msgid "Extra characteristics"
 msgstr "Características extra"
