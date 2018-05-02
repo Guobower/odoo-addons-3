@@ -8,3 +8,4 @@ Car Sale management is not finaly version, modules:
 * car_sale_base
 * car_sale_amount
 * website_car_sale
+* car_sale_disable_from_invoice
