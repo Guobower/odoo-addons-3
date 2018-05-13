@@ -2,7 +2,7 @@
 # © 2018 Rodrigo Colombo Vlaeminch (rodrigo.covl@gmail.com).
 {
     "name": "Car sale amount",
-    "version": "0.1",
+    "version": "1.0",
     "author": "Rodrigo Colombo Vlaeminch",
     "website": 'https://github.com/rodrig92',
     "category": "Sales",

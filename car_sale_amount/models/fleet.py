@@ -13,7 +13,7 @@ class FleetVehicle(models.Model):
                                         ('fix_price', _('Fix price')),
                                         ('benefit_amount', _('Benefit amount'))],
                                        string='Benefit Type',
-                                       default='percent', required=True,
+                                       default='fix_price', required=True,
                                        help=_("""Method for calculating the sale price of the vehicle:
                                                   *Percentage: A profit percentage is added to the cost of the vehicle.
                                                   *Fixed Price: Manually set price.
@@ -42,6 +42,17 @@ class FleetVehicle(models.Model):
                     price = car_value + amount_price
                 record.product_id.lst_price = record.product_id.list_price = price
         res = super(FleetVehicle, self).write(vals)
+        return res
+
+    @api.model
+    def create(self, data):
+        res = super(FleetVehicle, self).create(data)
+        price = res.amount_price
+        if res.type_sale_price == 'percent':
+            price = res.car_value + ((res.car_value * res.amount_price) / 100)
+        elif res.type_sale_price == 'benefit_amount':
+            price = res.car_value + res.amount_price
+        res.product_id.lst_price = price
         return res
 
 class FleetVehicleCost(models.Model):
