@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="inherit_view_product_image_form">
+        <field name="name">inherit.product.image.form</field>
+        <field name="model">product.image</field>
+        <field name="inherit_id" ref="website_sale.view_product_image_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='image']" position="replace">
+                <field name="full_image" widget="image" class="oe_avatar"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
