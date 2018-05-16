@@ -6,21 +6,21 @@ from odoo import api, models, fields, tools
 class ProductImage(models.Model):
     _inherit = 'product.image'
 
-    full_image = fields.Binary('Full Image', attachment=True, oldname='image')
+    full_image = fields.Binary('Full Image', attachment=True)
     image = fields.Binary('Image', attachment=True, compute='_resize_image')
 
     @api.multi
     def init(self):
         for record in self.search([]):
-            try:
-                record.full_image = record.image
-            except Exception:
-                pass
+            record.full_image = record.image
 
     @api.multi
     def _resize_image(self):
         for record in self:
-            try:
-                record.image = tools.image.image_resize_image(record.full_image, size=(640, 480))
-            except Exception:
-                record.image = record.full_image
+            if record.full_image:
+                try:
+                    record.image = tools.image.image_resize_image(record.full_image, size=(640, 480))
+                except Exception:
+                    record.image = record.full_image
+            else:
+                pass
