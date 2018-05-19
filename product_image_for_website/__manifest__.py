@@ -11,7 +11,7 @@
     'summary': 'Product image optimization for website',
     'depends': ['product',
                 'website_sale'],
-    'data': ['views/product_image_view.xml'],
+    'data': [],
     'application': False,
     'installable': True,
 }
