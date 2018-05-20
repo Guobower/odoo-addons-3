@@ -1,0 +1,216 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cash_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-20 19:14+0000\n"
+"PO-Revision-Date: 2018-05-20 19:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cash_control
+#: model:ir.ui.view,arch_db:cash_control.view_cash_box_kanban
+msgid "<span>Actual amount: </span>"
+msgstr "<span>Dinero actual: </span>"
+
+#. module: cash_control
+#: model:ir.ui.view,arch_db:cash_control.view_cash_box_kanban
+msgid "<span>Cash flows: </span>"
+msgstr "<span>Movimientos: </span>"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_actual_amount
+msgid "Actual amount"
+msgstr "Dinero actual"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_name
+msgid "Box"
+msgstr "Caja"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_cash_box_id
+#: model:ir.ui.view,arch_db:cash_control.view_cash_box_form
+#: model:ir.ui.view,arch_db:cash_control.view_cash_box_tree
+msgid "Cash Box"
+msgstr "Caja"
+
+#. module: cash_control
+#: model:ir.ui.menu,name:cash_control.menu_cash_control
+msgid "Cash Control"
+msgstr "Control de efectivo"
+
+#. module: cash_control
+#: model:res.groups,name:cash_control.group_cash_control_manager
+msgid "Cash Control Manager"
+msgstr "Administrador del control de efectivo"
+
+#. module: cash_control
+#: model:res.groups,name:cash_control.group_cash_control_user
+msgid "Cash Control User"
+msgstr "Usuario del control de efectivo"
+
+#. module: cash_control
+#: model:res.groups,name:cash_control.group_cash_control_viewer
+msgid "Cash Control Viewer"
+msgstr "Consultor del control de efectivo"
+
+#. module: cash_control
+#: model:ir.actions.act_window,name:cash_control.act_cash_box_2_cash_flow
+#: model:ir.ui.view,arch_db:cash_control.view_cash_flow_form
+#: model:ir.ui.view,arch_db:cash_control.view_cash_flow_tree
+msgid "Cash Flow"
+msgstr "Movimiento de efectivo"
+
+#. module: cash_control
+#: model:ir.actions.act_window,name:cash_control.open_cash_box
+#: model:ir.ui.menu,name:cash_control.menu_action_view_cash_box
+msgid "Cash box"
+msgstr "Cajas"
+
+#. module: cash_control
+#: model:ir.actions.act_window,name:cash_control.open_cash_flow
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_flow_ids
+#: model:ir.ui.menu,name:cash_control.menu_action_view_cash_flow
+msgid "Cash flow"
+msgstr "Movimiento de efectivo"
+
+#. module: cash_control
+#: model:ir.actions.act_window,help:cash_control.open_cash_box
+msgid "Click to create a new cash box."
+msgstr "Click para crear una nueva caja."
+
+#. module: cash_control
+#: model:ir.actions.act_window,help:cash_control.open_cash_flow
+msgid "Click to create a new cash flow."
+msgstr "Click para crear un nuevo movimiento de efectivo."
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_name
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_create_uid
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_create_date
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_currency_id
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_currency_id
+msgid "Currency id"
+msgstr "Moneda"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_date_flow
+msgid "Date"
+msgstr "Fecha"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_display_name
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_note
+msgid "Extra note"
+msgstr "Notas extra"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_flow_count
+msgid "Flows"
+msgstr "Movimientos"
+
+#. module: cash_control
+#: model:ir.actions.act_window,help:cash_control.act_cash_box_2_cash_flow
+msgid "Here, you can create new cash flow"
+msgstr "Aquí, usted puede crear un nuevo movimiento de efectivo"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_id
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_id
+msgid "ID"
+msgstr "ID"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box___last_update
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_write_uid
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_box_write_date
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: cash_control
+#: model:ir.model.fields,field_description:cash_control.field_cash_flow_amount
+msgid "Money"
+msgstr "Dinero"
+
+#. module: cash_control
+#: model:res.groups,comment:cash_control.group_cash_control_viewer
+msgid "The user will be able to view a cash flows, but not edit it."
+msgstr "El usuario podrá ver los movimientos de efectivo, pero no editarlos."
+
+#. module: cash_control
+#: model:res.groups,comment:cash_control.group_cash_control_manager
+msgid "The user will be able to view and edit all cash flows."
+msgstr "El usuario podrá ver y editar todos los movimientos de efectivo."
+
+#. module: cash_control
+#: model:res.groups,comment:cash_control.group_cash_control_user
+msgid "The user will be able to view and edit only personal cash flows."
+msgstr "El usuario podrá ver y editar solo sus movimientos de ejectivos."
+
+#. module: cash_control
+#: model:ir.ui.view,arch_db:cash_control.view_cash_flow_tree
+msgid "Total"
+msgstr "Total"
+
+#. module: cash_control
+#: model:ir.model,name:cash_control.model_cash_box
+msgid "cash.box"
+msgstr "Caja"
+
+#. module: cash_control
+#: model:ir.model,name:cash_control.model_cash_flow
+msgid "cash.flow"
+msgstr "Movimiento de caja"

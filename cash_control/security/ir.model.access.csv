@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cash_flow_viewer,cash.flow.viewer,model_cash_flow,group_cash_control_viewer,1,0,0,0
+access_cash_box_viewer,cash.box.viewer,model_cash_box,group_cash_control_viewer,1,0,0,0
+access_cash_flow_user,cash.flow.user,model_cash_flow,group_cash_control_user,1,1,1,1
+access_cash_box_user,cash.box.user,model_cash_box,group_cash_control_user,1,0,0,0
+access_cash_flow_manager,cash.flow.manager,model_cash_flow,group_cash_control_manager,1,1,1,1
+access_cash_box_manager,cash.box.manager,model_cash_box,group_cash_control_manager,1,1,1,1

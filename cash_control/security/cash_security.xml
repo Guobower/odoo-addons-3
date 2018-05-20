@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="group_cash_control_viewer" model="res.groups">
+            <field name="name">Cash Control Viewer</field>
+            <field name="category_id" ref="base.module_category_extra"/>
+            <field name="comment">The user will be able to view a cash flows, but not edit it.</field>
+        </record>
+        <record id="group_cash_control_user" model="res.groups">
+            <field name="name">Cash Control User</field>
+            <field name="category_id" ref="base.module_category_extra"/>
+            <field name="implied_ids" eval="[(4, ref('cash_control.group_cash_control_viewer'))]"/>
+            <field name="comment">The user will be able to view and edit only personal cash flows.</field>
+        </record>
+        <record id="group_cash_control_manager" model="res.groups">
+            <field name="name">Cash Control Manager</field>
+            <field name="category_id" ref="base.module_category_extra"/>
+            <field name="implied_ids" eval="[(4, ref('cash_control.group_cash_control_viewer'))]"/>
+            <field name="comment">The user will be able to view and edit all cash flows.</field>
+        </record>
+        <record id="cash_control_user_rule" model="ir.rule">
+            <field name="name">Cash control user rule</field>
+            <field name="model_id" ref="cash_control.model_cash_flow"/>
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('group_cash_control_user'))]"/>
+        </record>
+    </data>
+</odoo>
